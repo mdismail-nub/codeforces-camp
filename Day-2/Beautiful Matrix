@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int  v[6][6];
+	int temp,temp2;
+	for(int i=1;i<=5;i++){
+	    for(int j=1;j<=5;j++){
+	      
+	  cin>>v[i][j];
+	    if(v[i][j]==1){
+	        temp =i;
+	        temp2=j;
+	    }
+	}
+	}
+   int	move=abs(temp-3)+abs(temp2-3);
+	cout<<move<<endl;
+
+}
