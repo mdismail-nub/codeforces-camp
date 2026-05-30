@@ -26,3 +26,20 @@
 ## Complexity
 - Time: O(k)
 - Space: O(1)
+
+
+
+# 110A - Nearly Lucky Number
+
+**Problem Link:** https://codeforces.com/contest/110/problem/A
+
+## Approach
+- Lucky digits are `4` and `7`. A number is called a lucky number if it contains only these digits.
+- Count how many lucky digits (4s and 7s) are present in the given number `n`.
+- If that count itself is a lucky number (i.e., equal to `4` or `7`), print `YES`.
+- Otherwise, print `NO`.
+
+## Complexity
+- Time: O(log n)
+- Space: O(1)
+
