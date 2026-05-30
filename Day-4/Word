@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	string s;
+	cin>>s;
+	int cnt_up=0,cnt_low=0;
+	 for(int i=0;i<s.size();i++){
+     	if(isupper(s[i])){
+	       cnt_up++;
+	}
+	else {
+	    cnt_low++;
+	}
+	 }
+	 
+	if(cnt_low<cnt_up){
+	    for(int i=0;i<s.size();i++){
+	        s[i]=toupper(s[i]);
+	    }
+	}
+	else{
+	   for(int i=0;i<s.size();i++){
+	        s[i]=tolower(s[i]);
+	    } 
+	}
+	cout<<s<<endl;
+}
